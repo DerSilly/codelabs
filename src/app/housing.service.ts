@@ -117,4 +117,9 @@ protected housingLocationList: HousingLocation[] = [
   {
     return this.housingLocationList.find(housingLocation => housingLocation.id === id);
   }
+
+  submitApplication(lastName: string, firstName: string, email: string)
+  {
+    console.log(`Application submitted for ${firstName} ${lastName} at ${email}`);
+  }
 }
